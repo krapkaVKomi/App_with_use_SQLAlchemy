@@ -35,6 +35,6 @@ def home():
 
 
 if __name__ == '__main__':
-    with app.app_context():  # Заворачивши код у контекст додатку
+    with app.app_context(): 
         db.create_all()
     app.run(debug=True, port=3000, host="127.0.0.1")
